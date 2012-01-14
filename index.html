@@ -1,41 +1,126 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+
+<!-- 
+320 and Up boilerplate extension
+Author: Andy Clarke (http://about.me/malarkey)
+Author: Keith Clark (http://twitter.com/keithclarkcouk)
+Version: 2
+URL: http://stuffandnonsense.co.uk/projects/320andup/
+License: http://creativecommons.org/licenses/MIT/
+-->
+
+<!--[if IEMobile 7]><html class="no-js iem7 oldie"><![endif]-->
+<!--[if lt IE 7]><html class="no-js ie6 oldie" lang="en"><![endif]-->
+<!--[if (IE 7)&!(IEMobile)]><html class="no-js ie7 oldie" lang="en"><![endif]-->
+<!--[if (IE 8)&!(IEMobile)]><html class="no-js ie8 oldie" lang="en"><![endif]-->
+<!--[if gt IE 8]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<!--[if (gte IE 9)|(gt IEMobile 7)]><!--><html class="no-js" lang="en"><!--<![endif]-->
+
 <head>
-	<link type="text/css" href="style.css" rel="Stylesheet" />
-	<meta name="google-site-verification" content="5FR2KAJJHMcoys8WMKfAUpIe_8AO2x9FfWMLipuj2vc" />
-	
-	<script language="javascript">
-		//Preloading images after page load
-		function init()
-		{
-			img = new Image();
-			img.src = 'images/spiroCanvasP.png';
-			img.src = 'images/ZicZacZoeP.png';
-		}
-	</script>
-	
-	<script type="text/javascript">
+<meta charset="utf-8">
 
-	  var _gaq = _gaq || [];
-	  _gaq.push(['_setAccount', 'UA-24593968-1']);
-	  _gaq.push(['_trackPageview']);
+<title>Gethu Games</title>
+<meta name="description" content="Collection of open source modern web apps/games created using HTML5">
+<meta name="author" content="saiyasodharan">
 
-	  (function() {
-		var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-		ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-		var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-	  })();
+<!-- http://t.co/dKP3o1e -->
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+<meta name="viewport" content="width=device-width, target-densitydpi=160dpi, initial-scale=1.0">
 
-	</script>
-	
+<!-- For all browsers -->
+<link rel="stylesheet" href="css/style.css">
+
+<!--[if (lt IE 9) & (!IEMobile)]>
+<script src="js/libs/selectivizr-min.js"></script>
+<![endif]-->
+
+<!-- JavaScript -->
+<script src="js/libs/modernizr-2.0.6.min.js"></script>
+
+<!-- For iPhone 4 -->
+<link rel="apple-touch-icon-precomposed" sizes="114x114" href="img/h/apple-touch-icon.png">
+<!-- For iPad 1-->
+<link rel="apple-touch-icon-precomposed" sizes="72x72" href="img/m/apple-touch-icon.png">
+<!-- For iPhone 3G, iPod Touch and Android -->
+<link rel="apple-touch-icon-precomposed" href="img/l/apple-touch-icon-precomposed.png">
+<!-- For Nokia -->
+<link rel="shortcut icon" href="img/l/apple-touch-icon.png">
+<!-- For everything else -->
+<link rel="shortcut icon" href="/favicon.ico">
+
+<!--iOS. Delete if not required -->
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<link rel="apple-touch-startup-image" href="img/splash.png">
+
+<!--Microsoft. Delete if not required -->
+<meta http-equiv="cleartype" content="on">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<!--[if lt IE 7 ]><script src="//ajax.googleapis.com/ajax/libs/chrome-frame/1.0.2/CFInstall.min.js"></script><script>window.attachEvent("onload",function(){CFInstall.check({mode:"overlay"})})</script><![endif]-->
+
+<!-- http://t.co/y1jPVnT -->
+<link rel="canonical" href="/">
+
+<meta name="google-site-verification" content="5FR2KAJJHMcoys8WMKfAUpIe_8AO2x9FfWMLipuj2vc" />
+
 </head>
-<body onload="init()">
-	<div id="container" class="centered">
-		<a id="spiroCanvasDiv" href="http://www.gethugames.in/spirocanvas/"></a>
-		<a id="ticTacToeDiv" href="http://www.gethugames.in/tictactoe/"></a>
-		<div id="gethuGamesDiv" style="position:absolute; top:50%; margin:-35px 0 0 0">
-			<img src="images/gethuGames.png">
-		</div>
-	</div>
+
+<body class="clearfix">
+
+<header role="banner">
+<h1>Gethu Games</h1>
+</header>
+
+<section class="content clearfix">
+<article>
+<a href="http://www.gethugames.in/spirocanvas/"><h1> Spirocanvas </h1></a>
+<p>A HTML5 web application to generate vibrant spirographs and to share them on social networking sites like Facebook, etc.,</p>
+</article>
+
+<article>
+<a href="http://www.gethugames.in/tictactoe/"><h1> Tic Tac Toe Extended </h1></a>
+<p>This is an extended version of Tic Tac Toe game with a board size of 9x9. The player scores a point on placing his sign in 4 consecutive tiles. The game can be played with another human player or with AI. At the end of the game based on player's score and timing a Badge is awarded which can be shared to Facebook / Twitter. </p>
+</article>
+</section>
+
+<footer role="contentinfo" class="clearfix">
+</footer>
+
+<!-- Scripts -->
+<script src="js/libs/jquery-1.6.2.min.js"></script>
+<script src="js/plugins.js"></script>
+<script src="js/script.js"></script>
+<script src="js/mylibs/helper.js"></script>
+
+<!--[if (lt IE 9) & (!IEMobile)]>
+<script src="js/libs/imgsizer.js"></script>
+<![endif]-->
+
+<script>
+// iOS scale bug fix
+MBP.scaleFix();
+
+// Respond.js
+yepnope({
+test : Modernizr.mq('(only all)'),
+nope : ['js/libs/respond.min.js']
+});
+</script>
+
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-24593968-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+	var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+	ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+	var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+	
 </body>
 </html>
