@@ -16,7 +16,7 @@ html{
     background: -ms-radial-gradient(center, ellipse cover, #212121 0%,#000000 100%); /* IE10+ */
     background: radial-gradient(center, ellipse cover, #212121 0%,#000000 100%); /* W3C */
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#212121', endColorstr='#000000',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
-    font-size:62.5%;
+    font-size:0.9em;
 }
 body{margin:0 auto;padding:0;width:90%;font-size:16px;font-size:1.6rem;font-family:"Cambria, Georgia, Times, " Times New Roman;color:#282828;background-color:transparent;}
 button,input,select,textarea{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;color:#404040;}
@@ -52,7 +52,7 @@ sub{bottom:-0.25em;}
 a{color:#666; text-decoration:none; }
 a:visited{color:#666;}
 header { margin:auto; text-align:center; padding-top:20px; color:#888; }
-header h1 { font-size:2em; }
+header h1 { font-size:1.5em; }
 figure{margin-bottom:1.5em;}
 figure img,figure object,figure embed{margin-bottom:0.75em;max-width:100%;}
 figcaption{display:block;font-weight:normal;}
@@ -93,15 +93,21 @@ p{-webkit-hyphens:auto;-webkit-hyphenate-character:"\2010";-webkit-hyphenate-lim
 .visuallyhidden.focusable:active,.visuallyhidden.focusable:focus{position:static;margin:0;height:auto;width:auto;overflow:visible;clip:auto;}
 .invisible{visibility:hidden;}
 
-article {
+article, footer {
     width:100%;
     background:rgba(250, 250, 250, 0.2);
     border-radius:20px;
     color:#999;
     margin:1%;
+    text-align:center;
+}
+footer {
+    padding: 1%;
+    font-size: 0.8em;
 }
 article h1 {
-    font-size:1.2em;
+    text-align:left;
+    font-size:1em;
     border-bottom: 2px #111 solid;
     padding:15px;
     color:#4c92f5;
@@ -114,6 +120,10 @@ article h1:hover {
     background: rgba(50, 50, 50, 0.5);
     border-radius:20px;
     color:#888;
+}
+article img {
+    margin:auto;
+    width: 60%;
 }
 
 @media print{
@@ -131,14 +141,15 @@ article h1:hover {
     tr{page-break-inside:avoid;} 
     .ir a:after{content:"";}
 }
-@media only screen and (min-width: 480px){ 
-}
-@media only screen and (min-width: 600px){
-}
 @media only screen and (min-width: 768px){
     article {
         width:48%;
         float:left;
+    }
+    article img {
+        float: left;
+        margin: 2%;
+        width: 40%;
     }
 }
 @media only screen and (min-width: 992px){
